@@ -1,27 +1,27 @@
-# 🧠 Smart-OCR-System
+#  Smart-OCR-System
 
 An advanced Optical Character Recognition (OCR) system that combines image processing, computer vision, and machine learning techniques to accurately extract text from noisy and real-world images.
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 This project implements a complete OCR pipeline that transforms raw images into clean, machine-readable text. Unlike basic OCR tools, this system focuses on improving accuracy through preprocessing and structured processing stages.
 
 ---
 
-## 🔥 Features
+##  Features
 
-* 📸 Image preprocessing (grayscale, noise removal, thresholding)
-* 📐 Deskewing and image enhancement
-* 🔍 Text extraction using OCR engine
-* 🧠 Improved accuracy on noisy and real-world images
-* 📊 Before vs After comparison (enhanced vs raw input)
-* ⚡ Modular pipeline (easy to extend with deep learning models)
+*  Image preprocessing (grayscale, noise removal, thresholding)
+*  Deskewing and image enhancement
+*  Text extraction using OCR engine
+*  Improved accuracy on noisy and real-world images
+*  Before vs After comparison (enhanced vs raw input)
+*  Modular pipeline (easy to extend with deep learning models)
 
 ---
 
-## 🧠 Pipeline
+##  Pipeline
 
 ```
 Input Image
@@ -37,21 +37,21 @@ Final Text Output
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * Python
 * OpenCV
 * Tesseract OCR
 * NumPy
 
-### 🔥 Optional (Advanced)
+###  Optional 
 
 * EasyOCR
 * TensorFlow / PyTorch
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 Smart-OCR-System/
@@ -70,7 +70,7 @@ Smart-OCR-System/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 git clone https://github.com/your-username/Smart-OCR-System.git
@@ -80,7 +80,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Usage
+##  Usage
 
 ```bash
 python main.py
@@ -88,7 +88,7 @@ python main.py
 
 ---
 
-## 📊 Results
+##  Results
 
 | Input Image | Processed Image | Extracted Text |
 | ----------- | --------------- | -------------- |
@@ -98,33 +98,33 @@ python main.py
 
 ---
 
-## 🧪 Future Improvements
+##  Future Improvements
 
-* 🔥 Deep Learning-based OCR (CNN + LSTM)
-* 🧾 Handwritten text recognition
-* 📱 Streamlit web interface
-* 🌐 Multi-language support
+*  Deep Learning-based OCR (CNN + LSTM)
+*  Handwritten text recognition
+*  Streamlit web interface
+*  Multi-language support
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome. Feel free to fork the repo and submit a pull request.
 
 ---
 
-## 📜 License
+##  License
 
 This project is open-source and available under the MIT License.
 
 ---
 
-## 💡 Author
+##  Author
 
 Mathesh Chand
 
 ---
 
-## ⭐ Final Note
+##  Final Note
 
 This project demonstrates how combining preprocessing, computer vision, and machine learning significantly improves OCR performance compared to basic implementations.
