@@ -1,0 +1,43 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor folders
+.vscode/
+.idea/
+
+# Data files
+*.csv
+*.db
+*.sqlite3
+
+# Model files
+*.h5
+*.pkl
+*.joblib
+*.ckpt
+
+# Logs
+*.log
+
+# Firebase / Node
+node_modules/
+firebase-debug.log
+
+# Others
+*.zip
+*.tar.gz
