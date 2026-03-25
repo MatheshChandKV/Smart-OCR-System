@@ -1,26 +1,24 @@
 #OpenCV
-import numpy as np
 import cv2
-img=cv2.imread('test_image3.png')
+img=cv2.imread('test_image6.png')
+b_img=cv2.imread('black screen.png')
 img2=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-img3=cv2.Canny(img2,275,325)
-img5=cv2.erode(img3,(1,1),iterations=1)
-#img7=cv2.medianBlur(img3,3)
-img6=cv2.GaussianBlur(img3,(3,3),3)
-#img4=cv2.dilate(img3,(7,7),iterations=1)
-#img5=cv2.erode(img5,(7,7),iterations=2)
+clahe = cv2.createCLAHE(clipLimit=4.0, tileGridSize=(8,8))
+gray = clahe.apply(img2)
+img3=cv2.GaussianBlur(img2,(3,3),1)
+thresh = cv2.adaptiveThreshold(
+    img3, 255,
+    cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+    cv2.THRESH_BINARY,
+    11, 2
+)
+kernel = (2,2)
+thresh = cv2.morphologyEx(thresh, cv2.MORPH_OPEN, kernel)
+img4=cv2.dilate(img3,kernel,iterations=2)
 #cv2.imshow('Original',img)
-#cv2.imshow('Gray',img2)
-cv2.imshow('Canny',img3)
-#cv2.imshow('Median Blurred of edges',img7)
-cv2.imshow('Gaussian Blurred of edges',img6)
+cv2.imshow('pre-processed image',img4)
+cv2.waitKey(0)
 #cv2.imshow('Dilated',img4)
 #cv2.imshow('Eroded',img5)
-'''
-a=img.shape
-s=img[0:300,0:300]
-img6=cv2.resize(img,(a[0]*2,a[1]*2))
-cv2.imshow('Resized',img6)
-cv2.imshow('Section',s)'''
+#cv2.imshow('Median Blurred of edges',img7)
 
-cv2.waitKey(10000)
