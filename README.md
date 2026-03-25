@@ -73,7 +73,7 @@ Smart-OCR-System/
 ##  Installation
 
 ```bash
-git clone https://github.com/your-username/Smart-OCR-System.git
+git clone https://github.com/MatheshChandKV/Smart-OCR-System.git
 cd Smart-OCR-System
 pip install -r requirements.txt
 ```
@@ -94,7 +94,7 @@ python main.py
 | ----------- | --------------- | -------------- |
 | Raw Image   | Clean Image     | OCR Output     |
 
-(Add screenshots here)
+
 
 ---
 
