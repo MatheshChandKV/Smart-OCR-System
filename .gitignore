@@ -9,6 +9,17 @@ venv/
 env/
 *.env
 
+# Ignore dataset
+data/
+
+# Ignore models
+*.pkl
+
+# Ignore python cache
+__pycache__/
+*.pyc
+
+
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
