@@ -9,9 +9,11 @@ venv/
 env/
 *.env
 
+
 # Ignore dataset
 data/
-
+*.gz
+*.ubyte
 # Ignore models
 *.pkl
 
