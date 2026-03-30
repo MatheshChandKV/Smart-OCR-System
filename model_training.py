@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as p
+import joblib
 from torchvision import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
@@ -20,7 +20,4 @@ model.fit(X_train,y_train)
 y_pred=model.predict(X_test)
 print("\nClassification Report:\n")
 print(classification_report(y_test,y_pred))
-p.imshow(X_test[0].reshape(28,28),cmap='gray')
-p.title(f"Actual: {y_test[0]} | Predicted: {y_pred[0]}")
-p.axis('off')
-p.show()
+joblib.dump(model, "emnist_model.pkl")
